@@ -1,6 +1,6 @@
 import { Text, View, StyleSheet } from "react-native";
 import React, { Component, useEffect, useRef, useState } from "react";
-import { db } from "@/config/firebaseConfig";
+import { db } from "../config/firebaseConfig";
 import { collection, onSnapshot } from "firebase/firestore";
 import LottieView from "lottie-react-native";
 import { Colors } from "@/constants/Colors";
