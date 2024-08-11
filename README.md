@@ -2,6 +2,8 @@
 
 Este é o README do projeto TodayDone, um aplicativo de lista de tarefas desenvolvido em React Native.
 
+![alt text](image-1.png) ![alt text](image.png)
+
 ## Funcionalidades
 
 - Adicionar tarefas à lista

@@ -7,7 +7,7 @@ import {
   onSnapshot,
 } from "firebase/firestore";
 import ListItem from "./listItem";
-import { db } from "@/config/firebaseConfig";
+import { db } from "../config/firebaseConfig";
 
 export function ListTasks() {
   const [tasks, setTasks] = useState<DocumentData[]>([]);
@@ -38,7 +38,12 @@ export function ListTasks() {
     <View style={styles.wrapper}>
       <ScrollView style={{ width: "100%" }}>
         {tasks.map((task) => (
-          <ListItem text={task.task} done={task.done} id={task.id} />
+          <ListItem
+            text={task.task}
+            done={task.done}
+            id={task.id}
+            key={task.id}
+          />
         ))}
       </ScrollView>
     </View>

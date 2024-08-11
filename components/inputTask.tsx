@@ -8,7 +8,7 @@ import {
 import React, { Component, useState } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { collection, addDoc } from "firebase/firestore";
-import { db } from "@/config/firebaseConfig";
+import { db } from "../config/firebaseConfig";
 import { Colors } from "@/constants/Colors";
 
 export function InputTask() {
@@ -19,7 +19,6 @@ export function InputTask() {
       done: false,
     });
     setTask("");
-    console.log("Document written with ID: ", docRef.id);
   }
   return (
     <View style={styles.wrapper}>
